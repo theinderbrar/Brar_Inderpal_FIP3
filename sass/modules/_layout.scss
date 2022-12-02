@@ -1,0 +1,15 @@
+#app {
+  background-color: antiquewhite;
+  display: grid;
+  height: 100%;
+  grid-template-columns: minmax(100px, 300px) 1fr;
+  grid-template-rows: minmax(30px, 80px) 1fr 40px;
+}
+.header {
+  padding: 10px 30px;
+  grid-column: 1/3;
+}
+.footer {
+  padding: 10px 30px;
+  grid-column: 2/3;
+}

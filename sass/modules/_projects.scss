@@ -1,0 +1,25 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 20px;
+  &__heading {
+    font-size: 52px;
+    text-align: center;
+  }
+  &__section {
+    &__heading {
+      font-size: 32px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    &__description {
+      ul {
+        list-style-type: none;
+        li {
+          margin-bottom: 10px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

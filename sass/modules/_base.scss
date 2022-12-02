@@ -1,0 +1,22 @@
+// @import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+  text-decoration: none;
+  color: currentColor;
+  font-family: inherit;
+}
+body {
+  height: 100vh;
+  overflow-x: hidden;
+  color: #252525;
+  // font-family: 'Klee One', cursive;
+  font-family: 'Rubik', sans-serif;
+  box-sizing: border-box;
+}

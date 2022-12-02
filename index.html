@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inderpal Brar Portfolio</title>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style/css/styles.css">
+  <!-- Javascript -->
+</head>
+
+<body>
+  <div id="app">
+    <header class="header">
+      <div class="header__logo">
+        <img src="images/inderpal-brar-logo.svg" alt="Inderpal Brar">
+      </div>
+      <div class="header__nav-toggle">☕</div>
+    </header>
+    <nav class="navbar">
+      <a href="#" class="navbar__link" data-element-name="home">Home</a>
+      <a href="#" class="navbar__link" data-element-name="projects">About</a>
+      <a href="#" class="navbar__link" data-element-name="gallery">Gallery</a>
+      <a href="#" class="navbar__link" data-element-name="contact">Contact</a>
+    </nav>
+    <main class="main">
+      <div class="home">
+        <h1 class="home__heading">Hi, I am Inder Brar</h1>
+        <p class="home__description">I've had the honor of sharing work with people around
+          the globe. The opportunities of connecting and sharing
+          work with audiences is something I truly esteem.
+        </p>
+        <img src="images/inder-brar.jpg" alt="">
+      </div>
+
+      <div class="projects hidden">
+        <h2 class="projects__heading">About, Inder Brar</h2>
+        <div class="projects__section">
+          <div class="projects__section__heading">My Certifications</div>
+          <div class="projects__section__description">
+            <ul>
+              <li>
+                The Complete JavaScript Course 2022: From Zero to Expert - Jonas Schmedtmann (Udemy)
+              </li>
+              <li>
+                Web Development - (Bansal Training Centre)
+              </li>
+              <li>
+                Web Design for Web Developers: Build Beautiful Websites – Jonas Schmedtmann (Udemy)
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="projects__section">
+          <div class="projects__section__heading">My Certifications</div>
+          <div class="projects__section__description">
+            <ul>
+              <li>
+                HTML/CSS
+              </li>
+              <li>
+                PHP
+              </li>
+              <li>
+                Databases
+              </li>
+              <li>
+                Java script
+              </li>
+              <li>
+                Web Design
+              </li>
+              <li>
+                Graphic Design
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="gallery hidden">
+        <h2 class="gallery__heading">Gallery</h2>
+        <div class="gallery__app">
+          <div class="gallery__app__section">
+
+            <div class="gallery__app__section__title">Cinema4D FootBall Project</div>
+            <div class="gallery__app__section__image">
+              <video controls>
+                <source src="/working_directory/WEBfor/football.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="gallery__app__section__description">This is one of my showcases of the football project for
+              my
+              college.</div>
+          </div>
+          <div class="gallery__app__section">
+
+            <div class="gallery__app__section__title">Cinema4D Morph Project</div>
+            <div class="gallery__app__section__image">
+              <video controls>
+                <source src="/working_directory/WEBfor/Morph.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="gallery__app__section__description">This is one of my showcases of the morphing project for my
+              college.</div>
+          </div>
+          <div class="gallery__app__section">
+
+            <div class="gallery__app__section__title">Cinema4D Reel Project</div>
+            <div class="gallery__app__section__image">
+              <video controls>
+                <source src="/working_directory/WEBfor/reel.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="gallery__app__section__description">This is one of my showcases of the reel which I've made for
+              my portfolio.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact hidden">
+        <h2 class="contact__heading">Contact</h2>
+        <p class="contact__description">I would love to hear about your hopes and projects.</p>
+        <form action="https://anushawedssahil.com/mailer/includes/mail/send.php" method="POST" id="mail-form"
+          class="contact__form">
+          <!-- <form action="includes/mail/send.php" method="POST" id="mail-form" class="contact__form"> -->
+          <label for="firstname">First Name</label>
+          <input ref="fname" type="text" id="firstname" name="firstname" required="required" value="meharpreet-singh">
+
+          <label for="lastname">Last Name</label>
+          <input ref="lname" type="text" id="lastname" name="lastname" required value="sidhu">
+
+          <label for="email">Email</label>
+          <input ref="email" type="email" id="email" name="email" required value="meharsidhubti@gmail.com">
+
+          <label for="message">Your Message</label>
+          <textarea ref="message" name="message" id="message" cols="30" rows="10">Message Here</textarea>
+
+          <label for="phone">Your Phone # <i>(optional)</i></label>
+          <input ref="phone" type="tel" value="tel" name="phone" value="8360350054">
+          <br>
+          <div class="mailStatus hidden">💖Wait for mail status💖</div>
+
+          <div class="wrapper contact__form__submit">
+            <input @click.prevent="processMail" type="submit" class="submit" value="Send Message!">
+            <i class="fas fa-paper-plane"></i>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <a href="https://www.facebook.com/brar.inder.52" target="_blank">Facebook</a> |
+      <a href="https://www.instagram.com/izinderbrar" target="_blank">Instagram</a> |
+      <a href="https://github.com/theinderbrar" target="_blank">Github</a>
+    </footer>
+  </div>
+  <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

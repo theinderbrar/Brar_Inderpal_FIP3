@@ -1,0 +1,21 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  grid-gap: 10px;
+
+  &__link {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.5s;
+    font-weight: 600;
+    border-radius: 7px;
+    &:hover,
+    &__active {
+      background-color: #ff3717;
+      color: white;
+    }
+  }
+}

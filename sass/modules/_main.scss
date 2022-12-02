@@ -1,0 +1,39 @@
+.main {
+  overflow-y: scroll;
+  padding: 20px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 10px;
+  &__heading {
+    font-size: 52px;
+    text-align: center;
+  }
+  &__description {
+    text-align: center;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    input,
+    textarea {
+      padding: 3px;
+      max-width: 500px;
+      width: 100%;
+    }
+    &__submit {
+      margin-top: 20px;
+      input {
+        font-weight: 600;
+      }
+    }
+  }
+  .mailStatus {
+    font-weight: 600;
+    color: midnightblue;
+    text-shadow: 0 1px 1px #00000055;
+  }
+}
